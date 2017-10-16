@@ -1,6 +1,7 @@
 FROM ubuntu
 MAINTAINER Philippe Dubois 
-RUN   apt-get update && apt-get install -y --no-install-recommends ubuntu-desktop wget curl xmlstarlet
+ENV TERM xterm
+RUN   apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends ubuntu-desktop wget curl xmlstarlet
 RUN   wget http://eu.dl.alfresco.com.s3.amazonaws.com/release/community/201707-build-00028/alfresco-community-installer-201707-linux-x64.bin
 
 # make root readable by others
