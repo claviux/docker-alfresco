@@ -9,14 +9,14 @@ echo Installing Alfresco
 echo Configuring Alfresco
 /modifinitpass.sh
 # setting values for all the "-e ALF_xxx=..." parameters provided at startup
-/tunerepo.sh
+# /tunerepo.sh
 /tuneglobal.sh
 
 echo Starting Alfresco
-/opt/alfresco-5.0.d/alfresco.sh start
+/opt/alfresco-community/alfresco.sh start
 /waitready.sh
 echo Stopping Alfresco
-/opt/alfresco-5.0.d/alfresco.sh stop
+/opt/alfresco-community/alfresco.sh stop
 touch /installed.txt
 
 # remove this build-time install script

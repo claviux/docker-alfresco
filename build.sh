@@ -1,1 +1,1 @@
-docker build -t makuk66/docker-alfresco .
+docker build -t claviux/docker-alfresco .

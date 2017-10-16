@@ -9,7 +9,7 @@ if [ ! -f /installed.txt ]; then
 fi
 
 echo Starting Alfresco
-/opt/alfresco-5.0.d/alfresco.sh start
+/opt/alfresco-community/alfresco.sh start
 /waitready.sh
 date
 echo Alfresco is ready for action
